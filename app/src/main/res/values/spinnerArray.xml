@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filtering_options">
+        <item>Category</item>
+        <item>Area</item>
+        <item>Ingredient</item>
+    </string-array>
+    <string-array name="meal_options">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="sortBy">
+        <item>Name</item>
+        <item>Calories</item>
+    </string-array>
+    <string-array name="orderBy">
+        <item>Adcending</item>
+        <item>Descending</item>
+    </string-array>
+
+    <string-array name="favorites_options">
+        <item>Meal</item>
+        <item>Category</item>
+        <item>Area</item>
+        <item>Calories</item>
+    </string-array>
+
+</resources>

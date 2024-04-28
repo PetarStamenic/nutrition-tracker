@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:id="@+id/meal_single_fragment"
+    tools:context=".presentation.fragments.singleMeal.MealSingleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mealSingleMealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="20pt"
+        android:layout_marginTop="10pt"
+        android:text="TITLE"
+        android:textSize="30sp"
+        android:textColor="?android:attr/colorPrimary"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mealSingleMealCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSingleMealTitle"
+        />
+
+    <TextView
+        android:id="@+id/mealSingleMealArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AREA"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSingleMealCategory"
+        />
+
+    <TextView
+        android:id="@+id/mealSingleMealTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAGS"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSingleMealArea"
+        />
+
+    <ImageView
+        android:id="@+id/mealSingleMealImage"
+        android:layout_width="266dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/leo_sip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSingleMealTags"
+        android:contentDescription="@string/meal_image" />
+
+            <TextView
+                android:id="@+id/mealSingleMealCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Total"
+                android:textSize="20sp"
+                android:textColor="@color/pink_700"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mealSingleMealImage"
+                />
+
+            <TextView
+                android:id="@+id/mealSingleMealIngredientsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/ingredients"
+                android:textSize="20sp"
+                android:textColor="?android:attr/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mealSingleMealCalories"
+                />
+
+    <TextView
+        android:id="@+id/mealSingleIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ingredients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSingleMealIngredientsTitle"/>
+
+            <Button
+                android:id="@+id/mealSingleCaloriesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add missing calories"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mealSingleIngredients" />
+
+            <TextView
+                android:id="@+id/mealSingleMealVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video"
+                android:autoLink="web"
+                android:textIsSelectable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mealSingleCaloriesButton"
+                />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:id="@+id/webView"
+        android:background="?android:attr/colorBackground"
+        app:layout_constraintTop_toBottomOf="@id/mealSingleMealVideo"
+        />
+    <TextView
+        android:id="@+id/mealSingleMealLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LINK"
+        android:textColor="@color/pink_700"
+        android:autoLink="web"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webView"
+        />
+
+    <TextView
+        android:id="@+id/mealSingleInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="30dp"
+        android:text="Instructions"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@color/pink_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSingleMealLink"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mealSingleAddMealButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/add_meal_button"
+        android:layout_margin="30dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/add_meal"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven { url "https://jitpack.io" } // add this line
+    }
+}
+rootProject.name = "rs.raf.projekat_avgust_jelena_mijatovic_rn11421_petar_stamenic_rn7721"
+include ':app'

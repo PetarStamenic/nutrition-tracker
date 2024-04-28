@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Nutrition Tracker</string>
+    <string name="short_password">Password needs to be at least 5 characters long</string>
+    <string name="empty_field">Fields must not be empty</string>
+    <string name="capitaldigit">Password must contain at least one capitalized letter and at least one digit</string>
+    <string name="specialcharacter">Password must not contain any of the following characters: ~#\\^|\\\$%&amp;*!</string>
+    <string name="category">Category: %1$s</string>
+    <string name="area">Area: %1$s</string>
+    <string name="tags">Tags: %1$s</string>
+    <string name="caloriestotal">Calories: %1$s</string>
+    <string name="video">Watch video instructions</string>
+    <string name="logo">Logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meal_image">Meal image</string>
+    <string name="add_meal">Add meal</string>
+    <string name="incorrectpassword">Incorrect password</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="video_unavailable">sorry we don\'t have youtube video</string>
+    <string name="choose_the_meal_category">Choose the meal category</string>
+    <string name="choose_the_date_of_the_meal">Choose the date of the meal</string>
+    <string name="finish_meal_button">Finish</string>
+    <string name="add_meal_button">Add Meal</string>
+    <string name="add_calories">Please add calories for the given ingredients</string>
+</resources>

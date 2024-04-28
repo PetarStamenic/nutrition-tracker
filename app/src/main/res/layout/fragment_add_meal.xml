@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:id="@+id/meal_single_fragment"
+    tools:context=".presentation.fragments.singleMeal.AddMealFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/addMealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="20pt"
+        android:layout_marginTop="10pt"
+        android:text="TITLE"
+        android:textSize="30sp"
+        android:textColor="?android:attr/colorPrimary"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/addMealImage"
+        android:layout_width="266dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/leo_sip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMealTitle"
+        android:contentDescription="@string/meal_image" />
+
+            <TextView
+                android:id="@+id/addMealCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:layout_marginTop="10pt"
+                android:text="@string/choose_the_meal_category"
+                android:textColor="?android:attr/colorPrimary"
+                android:textAlignment="center"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addMealImage" />
+
+    <Spinner
+        android:id="@+id/addMealSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMealCategory"/>
+
+            <TextView
+                android:id="@+id/addMealDate"
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:layout_marginTop="10pt"
+                android:text="@string/choose_the_date_of_the_meal"
+                android:textColor="?android:attr/colorPrimary"
+                android:textAlignment="center"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addMealSpinner" />
+
+    <DatePicker
+        android:id="@+id/addMealDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMealDate" />
+
+    <Button
+        android:id="@+id/addMealButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/finish_meal_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMealDatePicker"
+        />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
